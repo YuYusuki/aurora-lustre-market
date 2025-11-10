@@ -26,10 +26,10 @@ export const Header = () => {
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
               <div className="w-10 h-10 rounded-full bg-gradient-luxury flex items-center justify-center">
-                <span className="text-xl font-bold text-white">LS</span>
+                <span className="text-xl font-bold text-white">NP</span>
               </div>
               <span className="text-xl font-bold text-gradient hidden sm:block">
-                Luxury Shop
+                NYNNA PRESENTES
               </span>
             </Link>
 
