@@ -12,7 +12,7 @@
     "nome": "Cesta Azul de Chocolates Sortidos",
     "valor": 40,
     "categoria": "Cestas",
-    "imagem": "/src/assets/image/produtos/cesta02.jpeg",
+    "imagem": "./src/assets/image/produtos/cesta02.jpeg",
     "descricao": "Cesta temática azul com vários chocolates e snacks, incluindo Bis, Nutry, Teens, Conguru e outros itens em embalagens azuis."
   },
   {
