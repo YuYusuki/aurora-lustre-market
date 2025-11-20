@@ -10,6 +10,7 @@ All colors MUST be HSL.
   :root {
     /* Luxury Shop Color Palette */
     --gold-satin: 32 42% 61%;           /* #C79A6E - Dourado Acetinado */
+    --gold-logo: 41, 40%, 54%;          /* #B99B5B - Dourado Acetinado */
     --rose-tea: 9 55% 80%;              /* #E4B7B1 - Rosa Chá */
     --snow-white: 0 0% 97%;             /* #F8F8F8 - Branco Neve */
     --deep-gray: 0 0% 18%;              /* #2E2E2E - Cinza Profundo */
@@ -49,9 +50,9 @@ All colors MUST be HSL.
     --radius: 0.75rem;
     
     /* Gradients */
-    --gradient-luxury: linear-gradient(135deg, hsl(var(--gold-satin)) 0%, hsl(var(--rose-tea)) 100%);
+    --gradient-luxury: linear-gradient(138deg, hsl(var(--gold-satin)) 0%, hsl(var(--rose-tea)) 100%);
     --gradient-hero: linear-gradient(180deg, hsl(var(--snow-white)) 0%, hsl(32 42% 96%) 100%);
-    
+    --gradient-gold: #b99b5b;
     /* Shadows */
     --shadow-soft: 0 4px 20px rgba(199, 154, 110, 0.1);
     --shadow-luxury: 0 8px 32px rgba(199, 154, 110, 0.15);
@@ -113,7 +114,7 @@ All colors MUST be HSL.
   }
   
   .gradient-luxury {
-    background: var(--gradient-luxury);
+     background: var(--gradient-luxury);
   }
   
   .hover-lift {
@@ -131,4 +132,20 @@ All colors MUST be HSL.
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+  .text-gold {
+    color: #B99B5B;
+  }
+  .text-gold-old{
+    color: #C79A6E;
+  }
+  .text-rose {
+    color: #E4B7B1;
+  }
+  .rose {
+    background-color: #E4B7B1;
+  }
+  .rose:hover {
+    background-color: #B99B5B;;
+  }
+
 }
