@@ -4,7 +4,7 @@
     "nome": "Cesta Romântica com Chocolates",
     "valor": 100,
     "categoria": "Cestas",
-    "imagem": "../assets/image/produtos/cesta01.jpeg",
+    "imagem": "https://files.catbox.moe/aogjrc.jpeg",
     "descricao": "Cesta contendo diversos chocolates como Alpino, Trento, Ioio, além de um mini travesseiro decorado com desenho romântico."
   },
   {
@@ -12,7 +12,7 @@
     "nome": "Cesta Azul de Chocolates Sortidos",
     "valor": 40,
     "categoria": "Cestas",
-    "imagem": "/assets/image/produtos/cesta02.jpeg",
+    "imagem": "https://files.catbox.moe/xp68fy.jpeg",
     "descricao": "Cesta temática azul com vários chocolates e snacks, incluindo Bis, Nutry, Teens, Conguru e outros itens em embalagens azuis."
   },
   {
@@ -20,7 +20,7 @@
     "nome": "Kit Presente com Urso e Chocolates",
     "valor": 55,
     "categoria": "Presentes",
-    "imagem": "/src/assets/image/produtos/rosa_urso.jpeg",
+    "imagem": "https://files.catbox.moe/5v8cgu.jpeg",
     "descricao": "Kit contendo um ursinho de pelúcia, chocolates Ferrero Rocher e Ouro Branco, acompanhado de uma rosa embalada com luzes decorativas."
   },
   {
@@ -28,7 +28,7 @@
     "nome": "Rosa com Luzes Decorativas",
     "valor": 20,
     "categoria": "Flores",
-    "imagem": "/src/assets/image/produtos/rosa.jpeg",
+    "imagem": "https://files.catbox.moe/iqy2ep.jpeg",
     "descricao": "Rosa vermelha embalada com luzes LED decorativas, ideal para presente romântico."
   },
   {
@@ -36,7 +36,7 @@
     "nome": "Cesta com Chocolates Sortidos",
     "valor": 50,
     "categoria": "Cestas",
-    "imagem": "/src/assets/image/produtos/cesta03.jpeg",
+    "imagem": "https://files.catbox.moe/cm4jh1.jpeg",
     "descricao": "Cesta contendo vários chocolates como Look, Bauducco Choco Biscuit, Ana Maria e bombons Sonho de Valsa."
   },
   {
@@ -44,7 +44,7 @@
     "nome": "Cesta Romântica com Chocolates",
     "valor": 45,
     "categoria": "Cestas",
-    "imagem": "/src/assets/image/produtos/cesta04.jpeg",
+    "imagem": "https://files.catbox.moe/96zp1y.jpeg",
     "descricao": "Cesta contendo diversos chocolates como Alpino, Trento, Ioio, além de um mini travesseiro decorado com desenho romântico."
   },
   {
@@ -52,7 +52,7 @@
     "nome": "Cesta Azul de Chocolates Sortidos",
     "valor": 50,
     "categoria": "Cestas",
-    "imagem": "/src/assets/image/produtos/cesta05.jpeg",
+    "imagem": "https://files.catbox.moe/iqy2ep.jpeg",
     "descricao": "Cesta temática azul com vários chocolates e snacks, incluindo Bis, Nutry, Teens, Conguru e outros itens em embalagens azuis."
   },
   {
@@ -60,7 +60,7 @@
     "nome": "Kit Presente com Urso e Chocolates",
     "valor": 55,
     "categoria": "Presentes",
-    "imagem": "/src/assets/image/produtos/cesta06.jpeg",
+    "imagem": "https://files.catbox.moe/must68.jpeg",
     "descricao": "Kit contendo um ursinho de pelúcia, chocolates Ferrero Rocher e Ouro Branco, acompanhado de uma rosa embalada com luzes decorativas."
   },
   {
@@ -68,7 +68,7 @@
     "nome": "Rosa com Luzes Decorativas",
     "valor": 100,
     "categoria": "Flores",
-    "imagem": "/src/assets/image/produtos/cesta07.jpeg",
+    "imagem": "https://files.catbox.moe/hsr212.jpeg",
     "descricao": "Rosa vermelha embalada com luzes LED decorativas, ideal para presente romântico."
   },
   {
@@ -76,7 +76,7 @@
     "nome": "Cesta com Chocolates Sortidos",
     "valor": 150,
     "categoria": "Cestas",
-    "imagem": "/src/assets/image/produtos/cesta08.jpeg",
+    "imagem": "https://files.catbox.moe/kslmc1.jpeg",
     "descricao": "Cesta contendo vários chocolates como Look, Bauducco Choco Biscuit, Ana Maria e bombons Sonho de Valsa."
   },
   {
@@ -84,7 +84,7 @@
     "nome": "Cesta Romântica Amo você",
     "valor": 120,
     "categoria": "Cestas",
-    "imagem": "/src/assets/image/produtos/cesta09.jpeg",
+    "imagem": "https://files.catbox.moe/m3f5j8.jpeg",
     "descricao": "Cesta contendo vários chocolates como Look, Bauducco Choco Biscuit, Ana Maria e bombons Sonho de Valsa."
   },
   {
@@ -92,7 +92,7 @@
     "nome": "Cesta com Chocolates Sortidos",
     "valor": 80,
     "categoria": "Cestas",
-    "imagem": "/src/assets/image/produtos/cesta10.jpeg",
+    "imagem": "https://files.catbox.moe/b519nm.jpeg",
     "descricao": "Cesta contendo vários chocolates como Look, Bauducco Choco Biscuit, Ana Maria e bombons Sonho de Valsa."
   }
 ]
