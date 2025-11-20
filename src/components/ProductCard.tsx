@@ -27,7 +27,7 @@ export const ProductCard = ({ product, onClick, onAddToCart }: ProductCardProps)
           loading="lazy"
         />
         <div className="absolute top-3 right-3">
-          <span className="px-3 py-1 text-xs font-medium bg-gradient-luxury text-white rounded-full shadow-soft">
+          <span className="px-3 py-1 text-xs font-medium bg-rose text-white rounded-full shadow-soft">
             {product.categoria}
           </span>
         </div>
