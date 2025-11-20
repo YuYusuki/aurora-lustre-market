@@ -28,7 +28,7 @@ export const Header = () => {
               <div className="w-10 h-10 rounded-full flex items-center justify-center">
                 <span className="text-xl font-bold text-white">
                   <img
-                  src='../assets/image/logo.png' 
+                  src='https://files.catbox.moe/i34hcp.png' 
                   />
                 </span>
               </div>
