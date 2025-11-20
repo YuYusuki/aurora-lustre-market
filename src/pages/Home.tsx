@@ -59,7 +59,7 @@ const Home = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center space-y-6 px-4 max-w-3xl animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold text-white drop-shadow-2xl">
-              Luxury Shop
+              NYNNA PRESENTES
             </h1>
             <p className="text-xl md:text-2xl text-white/90 drop-shadow-lg">
               Elegância e sofisticação em cada detalhe
@@ -67,7 +67,7 @@ const Home = () => {
             <Button
               asChild
               size="lg"
-              className="bg-gradient-luxury hover:opacity-90 transition-opacity text-white h-14 px-8 text-lg"
+              className="bg-rose hover:opacity-90 transition-opacity text-white h-14 px-8 text-lg"
             >
               <Link to="/produtos">
                 Explorar Coleção

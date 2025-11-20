@@ -44,7 +44,7 @@
     "nome": "Cesta Romântica com Chocolates",
     "valor": 45,
     "categoria": "Cestas",
-    "imagem": "./src/assets/image/produtos/cesta04.jpeg",
+    "imagem": "src/assets/image/produtos/cesta04.jpeg",
     "descricao": "Cesta contendo diversos chocolates como Alpino, Trento, Ioio, além de um mini travesseiro decorado com desenho romântico."
   },
   {
@@ -68,7 +68,7 @@
     "nome": "Rosa com Luzes Decorativas",
     "valor": 100,
     "categoria": "Flores",
-    "imagem": "./src/assets/image/produtos/cesta07.jpeg",
+    "imagem": "src/assets/image/produtos/cesta07.jpeg",
     "descricao": "Rosa vermelha embalada com luzes LED decorativas, ideal para presente romântico."
   },
   {
