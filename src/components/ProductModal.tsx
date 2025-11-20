@@ -18,7 +18,7 @@ interface ProductModalProps {
 
 export const ProductModal = ({ product, isOpen, onClose }: ProductModalProps) => {
   const [quantity, setQuantity] = useState(1);
-  const { addToCart } = useCart();
+  const { addToCart, cart } = useCart();
   const { toast } = useToast();
 
   if (!product) return null;
@@ -41,13 +41,51 @@ export const ProductModal = ({ product, isOpen, onClose }: ProductModalProps) =>
   };
 
   const handleBuyNow = () => {
-    addToCart(product, quantity);
+    if (cart.length === 0) {
+      addToCart(product, quantity);
+    } else {
+      addToCart(product, quantity);
+    }
+    
+    // Prepara mensagem do WhatsApp
+    const cartItems = cart.length === 0 
+      ? [{ ...product, quantity }] 
+      : [...cart, { ...product, quantity }];
+    
+    let valorTotal = 0;
+    let lista = '';
+    
+    cartItems.forEach(item => {
+      const valorMultiply = item.valor * item.quantity;
+      lista += `*${item.nome}*
+*Quantidade:* ${item.quantity}
+*Valor:* ${formatPrice(valorMultiply)}
+
+`;
+      valorTotal += valorMultiply;
+    });
+    
+    const mensagem = `*Esse é o meu pedido!*
+${lista}*Total: ${formatPrice(valorTotal)}*`;
+    
+    // Envia para WhatsApp
+    const phone = "5516996004681";
+    const cleanPhone = phone.replace(/[^\d]/g, '');
+    const encodedText = encodeURIComponent(mensagem);
+    const isMobile = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    
+    const whatsappLink = isMobile 
+      ? `whatsapp://send?phone=${cleanPhone}&text=${encodedText}`
+      : `https://wa.me/${cleanPhone}?text=${encodedText}`;
+    
+    window.open(whatsappLink, '_blank');
+    
     setQuantity(1);
     onClose();
-    // Aqui você poderia redirecionar para checkout
+    
     toast({
-      title: 'Produto adicionado!',
-      description: 'Verifique seu carrinho para finalizar a compra.',
+      title: 'Pedido enviado!',
+      description: 'Seu pedido foi enviado via WhatsApp.',
     });
   };
 
