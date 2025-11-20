@@ -23,8 +23,8 @@ const App = () => (
             <Header />
             <main className="flex-1">
               <Routes>
-                <Route path="/" element={<Index />} />
-                <Route path="/produtos" element={<Products />} />
+                <Route path="/aurora-lustre-market" element={<Index />} />
+                <Route path="/aurora-lustre-market/produtos" element={<Products />} />
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                 <Route path="*" element={<Index />} />
               </Routes>

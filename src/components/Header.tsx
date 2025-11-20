@@ -12,8 +12,8 @@ export const Header = () => {
   const location = useLocation();
 
   const navItems = [
-    { name: 'Home', path: '/' },
-    { name: 'Produtos', path: '/produtos' },
+    { name: 'Home', path: '/aurora-lustre-market' },
+    { name: 'Produtos', path: '/aurora-lustre-market/produtos' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
