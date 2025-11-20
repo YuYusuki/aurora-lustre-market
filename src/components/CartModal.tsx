@@ -10,6 +10,7 @@ import { Minus, Plus, Trash2, ShoppingBag } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { ScrollArea } from '@/components/ui/scroll-area';
 
+
 interface CartModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -26,15 +27,62 @@ export const CartModal = ({ isOpen, onClose }: CartModalProps) => {
     }).format(price);
   };
 
-  const handleCheckout = () => {
+  const sendWhatsAppMessage = (phone, text = '') => {
+    const cleanPhone = phone.replace(/[^\d]/g, '');
+    const encodedText = encodeURIComponent(text); 
+   
+    const isMobile = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    
+    let whatsappLink;
+
+    if (isMobile) {
+       
+        
+        whatsappLink = `whatsapp://send?phone=${cleanPhone}&text=${encodedText}`;
+        
+    } else {
+        
+        whatsappLink = `https://wa.me/${cleanPhone}?text=${encodedText}`;
+    }
+
+    
+    window.open(whatsappLink, '_blank');
+}
+
+const handleCheckout = () => {
     if (cart.length === 0) return;
+    let valorTotal = 0
+    let lista
+    cart.map(item => {
+      const valorMutlipy = item.valor * item.quantity
+      lista = lista == undefined ?  `*${item.nome}*
+*Quantidade:* ${item.quantity}
+*valor:* ${formatPrice(valorMutlipy)} 
+
+` : 
+`*${item.nome}*
+*Quantidade:* ${item.quantity}
+*valor:* ${formatPrice(valorMutlipy)}
+
+` + lista 
+
+ valorTotal = valorMutlipy + valorTotal
+
+      
+      return lista
+    })
+    const mesagem = `*Esse e o meu pedido !*
+${lista}*Total: ${formatPrice(valorTotal)}*`
+    
+
+    sendWhatsAppMessage( "5516996004681" ,mesagem)
     
     toast({
       title: 'Pedido finalizado!',
       description: 'Obrigado pela sua compra. Em breve você receberá os detalhes do pedido.',
     });
-    clearCart();
-    onClose();
+     clearCart();
+     onClose();
   };
 
   return (
