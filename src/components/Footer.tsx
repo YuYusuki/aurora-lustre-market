@@ -14,10 +14,14 @@ export const Footer = () => {
           {/* About */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 rounded-full bg-gradient-luxury flex items-center justify-center">
-                <span className="text-xl font-bold text-white">LS</span>
+              <div className="w-10 h-10 rounded-full flex items-center justify-center">
+                <span className="text-xl font-bold text-white">
+                   <img
+                  src='./src/assets/image/logo.png' 
+                  />
+                </span>
               </div>
-              <span className="text-lg font-bold text-gradient">Luxury Shop</span>
+              <span className="text-lg font-bold text-gold">NYNNA PRESENTES</span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Sua boutique de produtos premium e exclusivos. 
@@ -31,7 +35,7 @@ export const Footer = () => {
             <div className="space-y-3 text-sm text-muted-foreground">
               <div className="flex items-center space-x-3 hover:text-primary transition-colors">
                 <Mail className="h-4 w-4" />
-                <span>contato@luxuryshop.com</span>
+                <span>contato@nynnapresentes.com</span>
               </div>
               <div className="flex items-center space-x-3 hover:text-primary transition-colors">
                 <Phone className="h-4 w-4" />
@@ -67,7 +71,7 @@ export const Footer = () => {
 
         {/* Bottom */}
         <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} Luxury Shop. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} Nynna Presentes. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
